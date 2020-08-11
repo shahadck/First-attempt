@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shd pvt ltd</title>
     <link rel="icon" href="logo.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,7 +46,7 @@
 
         </div>
     </header>
-  <section id="home" style="padding-top: 10em; padding-bottom: 5em;">
+  <section id="home" style="background-image: url(wall.jpg); padding-top: 10em; padding-bottom: 5em;">
       <div class="container-fluid">
           <div class="row align-items-center">
               <div class="col-md-6">
@@ -52,7 +54,7 @@
 
               </div>
               <div class="col-md-6">
-                  <h1 class="font-weight-bold pt-4" style="text-decoration-thickness: 1em; font-size: 65px">Hi, iam Shahad C K</h1> <br><h2>Entrepreneur, Full Stack Developer</h2><br>
+                  <h1 class="font-weight-bold pt-4" style="text-decoration-thickness: 1em; font-size: 65px">Hi, i'm Shahad</h1> <br><h2>Entrepreneur, Full Stack Developer</h2><br>
                   <blockquote class="blockquote">
                       <p><h4 style="color: #a9a9a9;" class="font-italic">"There are many ways to get achievements.But you want to find it"</h4></p>
                       <footer style="color: #a9a9a9;">`Shahad</footer>
@@ -64,8 +66,8 @@
       </div>
 
   </section>
-  <section class="bg-light container-fluid" id="service">
-    <h1 class="text-center font-weight-bold">Services</h1>
+  <section class="bg-light container-fluid" id="service" style="background-image: url(bg2.jpg);">
+    <h1 class="p-3 text-center font-weight-bold">Services</h1>
     <div class="row p-4 align-items-center">
       <div class="col-md-4">
         <div class="card" style="width: 18rem;">
@@ -126,37 +128,23 @@
     </div>
 
   </section>
-  <section class="p-4" id="contact">
+  <section class="p-4" id="contact" style="background-image: url(wall.jpg);">
     <div class="container-fluid">
       <h1 class="font-weight-bold text-center">Get In Touch</h1>
       <div class="row">
         <div class="col-md-12">
-          <form>
-            <div class="form-row ">
-              <div class="form-group col-md-6">
-                <label class="pt-3">Name</label>
-                <input type="text" class="form-control"placeholder="Name">
-              </div>
-              <div class="form-group col-md-6">
-                <label class="pt-3">Place</label>
-                <input type="text" class="form-control" placeholder="Place">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="">Mobile</label>
-                <input type="tel" pattern=".{10}" id="validationCustom08" oninput="check(this)" required class="form-control" placeholder="Mobile">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputAddress">Message</label>
-              <textarea class="form-control" cols="30" rows="10" placeholder="Type your meassage here..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-dark" >SEND</button>
+          <form id="submit-form" method="POST" action="https://script.google.com/macros/s/AKfycbxFY5LLJiMnFJjgGDEedh0I7x1tNR0QhKMiq6ts/exec">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Name"><br>
+            <label for="place">Place</label>
+            <input type="text" name="name" placeholder="Place"><br>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email"><br>
+            <label for="mobile">Mobile</label>
+            <input type="text" id="mobile" name="email" placeholder="Mobile Number"><br>
+            <label for="Message">Message</label>
+            <textarea id="Message" name="message" placeholder="Write your message here..." style="height:170px"></textarea><br>
+            <input type="submit" value="Submit">
           </form>
         </div>
       </div>
